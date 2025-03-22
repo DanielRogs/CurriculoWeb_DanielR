@@ -1,11 +1,17 @@
 import styled from "styled-components";
 
 export const Container = styled.nav`
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-top: 10px;
+  padding-top: 10px;
+  z-index: 3;
+  background: var(--primary-color);
 `;
 
 export const Lista = styled.ul`

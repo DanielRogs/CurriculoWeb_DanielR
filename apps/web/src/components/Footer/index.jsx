@@ -41,6 +41,11 @@ const Footer = () => {
         <FaGithubSquare className="icon github" />
         <FaInstagram className="icon insta" />
       </section>
+
+      <p className="rights">
+        Criado por <span>Daniel Rodrigues</span> | © Todos os direitos
+        reservados, 2025.
+      </p>
     </Container>
   );
 };

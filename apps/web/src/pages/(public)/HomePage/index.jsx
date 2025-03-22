@@ -3,11 +3,36 @@ import {
   AboutMeSection,
   ApresentationSection,
   Container,
+  ProjectsSection,
+  SkillsSection,
   Space,
+  TecnoSection,
 } from "./styled";
 import Button from "../../../components/Button";
 
-import { FaInstagram, FaLinkedin, FaGithubSquare } from "react-icons/fa";
+import {
+  FaInstagram,
+  FaLinkedin,
+  FaGithubSquare,
+  FaPencilRuler,
+  FaLaptopCode,
+  FaHtml5,
+  FaCss3Alt,
+  FaDocker,
+} from "react-icons/fa";
+import { FaListCheck } from "react-icons/fa6";
+import {
+  SiJavascript,
+  SiTypescript,
+  SiMysql,
+  SiMongodb,
+  SiPython,
+  SiReact,
+  SiExpo,
+  SiNodedotjs,
+} from "react-icons/si";
+import CardSkills from "../../../components/CardSkills";
+import CardTecno from "../../../components/CardTecno";
 
 const HomePage = () => {
   return (
@@ -73,6 +98,98 @@ const HomePage = () => {
         </div>
       </AboutMeSection>
       <Space />
+      <SkillsSection>
+        <CardSkills
+          icon={<FaPencilRuler className="icon" />}
+          title={"Designer de Interface"}
+        />
+        <CardSkills
+          icon={<FaLaptopCode className="icon" />}
+          title={"Desenvolvedor Fullstack"}
+        />
+        <CardSkills
+          icon={<FaListCheck className="icon" />}
+          title={"Elicitação de Requisitos"}
+        />
+      </SkillsSection>
+      <TecnoSection>
+        <section className="section-description">
+          <span>Tecnologias</span>
+          <h1>Ferramentas de Desenvolvimento</h1>
+          <p>Saiba quais tecnologias acompanham meus projetos e serviços.</p>
+        </section>
+        <section className="section-tecnos">
+          <CardTecno
+            icon={<FaHtml5 className="icon" />}
+            title={"HTML 5"}
+            description={"Estrutura e organização para páginas da web."}
+          />
+          <CardTecno
+            icon={<FaCss3Alt className="icon" />}
+            title={"CSS"}
+            description={"Estilização e design para a web."}
+          />
+          <CardTecno
+            icon={<SiJavascript className="icon" />}
+            title={"JavaScript"}
+            description={"Interatividade e dinamismo em sites."}
+          />
+          <CardTecno
+            icon={<SiTypescript className="icon" />}
+            title={"TypeScript"}
+            description={"JavaScript com tipagem estática."}
+          />
+          <CardTecno
+            icon={<SiPython className="icon" />}
+            title={"Python"}
+            description={"Simplicidade e poder para diversas aplicações."}
+          />
+          <CardTecno
+            icon={<FaDocker className="icon" />}
+            title={"Docker"}
+            description={"Contêineres para aplicações escaláveis."}
+          />
+          <CardTecno
+            icon={<SiReact className="icon" />}
+            title={"ReactJS"}
+            description={"Construção de interfaces dinâmicas."}
+          />
+          <CardTecno
+            icon={<SiExpo className="icon" />}
+            title={"Expo/React Native"}
+            description={"Apps mobile com React Native."}
+          />
+          <CardTecno
+            icon={<SiNodedotjs className="icon" />}
+            title={"Node.js"}
+            description={"Back-end com JavaScript no servidor."}
+          />
+          <CardTecno
+            icon={<SiMysql className="icon" />}
+            title={"MySQL"}
+            description={"Banco de dados relacional robusto."}
+          />
+          <CardTecno
+            icon={<SiMongodb className="icon" />}
+            title={"MongoDB"}
+            description={"Banco de dados NoSQL flexível."}
+          />
+        </section>
+      </TecnoSection>
+      <ProjectsSection>
+        <section className="section-description">
+          <span>Projetos</span>
+          <h1>Trabalhos Realizados.</h1>
+          <p>
+            Acompanhe projetos de outros produtos de software em andamento em
+            meu GitHub.
+          </p>
+
+          <Button variant="orange">Visitar GitHub</Button>
+        </section>
+
+        <section className="section-projects"></section>
+      </ProjectsSection>
     </Container>
   );
 };

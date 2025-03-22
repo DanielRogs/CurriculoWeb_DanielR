@@ -5,7 +5,7 @@ export const Container = styled.footer`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-block: 20px;
+  padding-top: 20px;
   background: var(--primaryDark-color);
 
   .Centralização {
@@ -83,6 +83,25 @@ export const Container = styled.footer`
       &:hover {
         color: var(--tertiary-color);
       }
+    }
+  }
+
+  .rights{
+    color: var(--tertiary-color);
+    font-family: var(--font-family);
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+    
+
+    @media (max-width: 800px) {
+      text-align: center;
+    }
+
+    span{
+      color: var(--secondary-color);
     }
   }
 `;
