@@ -108,3 +108,11 @@ export const Nav = styled.ul`
     }
   }
 `;
+
+export const Form = styled.form`
+  display: flex;
+  width: 100%;
+  align-items: end;
+  flex-direction: column;
+  gap: 10px;
+`;
