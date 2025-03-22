@@ -1,12 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root{
+  --primary-color: #424560;
+  --secondary-color: #FF7A00;
+  --tertiary-color: #FFFFFF;
+  --primaryDark-color: #252737;
+  --secondaryDark-color: rgb(216, 104, 0);
+  --tertiaryDark-color: rgb(219, 219, 219);
+
+  --font-family: 'Jost', sans-serif;
+}
+
 *{
   box-sizing: border-box;
 }
 
 body {
   font-family: 'Myriad Pro', sans-serif;
-  background: #424560;
+  background: var(--primary-color);
   margin: 0;
   padding: 0;
   display: flex;

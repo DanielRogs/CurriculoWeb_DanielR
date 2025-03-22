@@ -8,71 +8,166 @@ export const Container = styled.div`
 
 export const ApresentationSection = styled.section`
   width: 100%;
-  height: 100%;
+  height: 530px;
   margin-top: 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 
-  .section-name{
+  .section-name {
     display: flex;
     flex-direction: column;
 
-    .first-name{
+    .first-name {
       margin: 0;
       padding: 0;
       margin-bottom: -20px;
 
-      color: #FF7A00;
-      font-family: "Jost", sans-serif;
+      color: var(--secondary-color);
+      font-family: var(--font-family);
       font-weight: 600;
       font-size: 100px;
     }
 
-    .last-name{
+    .last-name {
       margin: 0;
       padding: 0;
 
-      color: white;
-      font-family: "Jost", sans-serif;
+      color: var(--tertiary-color);
+      font-family: var(--font-family);
       font-weight: 600;
       font-size: 80px;
     }
 
-    .line{
-      background: #FF7A00;
+    .line {
+      background: var(--secondary-color);
       height: 5px;
       width: 100px;
       border-radius: 100px;
     }
   }
 
-  .section-description{
+  .section-description {
     display: flex;
     flex-direction: column;
     color: white;
 
-    p{
+    p {
       padding: 0;
       margin: 0;
-      font-family: "Jost", sans-serif;
+      font-family: var(--font-family);
       font-weight: 400;
       font-size: 17px;
     }
 
-    h1{
+    h1 {
       padding: 0;
       margin: 0;
-      font-family: "Jost", sans-serif;
+      font-family: var(--font-family);
       font-weight: bold;
       font-size: 40px;
-      
+
       margin-block: 15px;
 
-      span{
-        color: #FF7A00;
+      span {
+        color: var(--secondary-color);
       }
     }
   }
+
+  .section-social {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 30px;
+
+    .icon {
+      color: var(--secondary-color);
+      font-size: 25px;
+      cursor: pointer;
+      transition: 200ms;
+
+      &:hover {
+        color: var(--tertiary-color);
+      }
+    }
+  }
+
+  .section-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+`;
+
+export const AboutMeSection = styled.section`
+  position: absolute;
+  width: 100%;
+  margin-top: 550px;
+  display: flex;
+  background: var(--primaryDark-color);
+  padding-bottom: 120px;
+
+  h1{
+    color: white;
+    font-family: var(--font-family);
+    font-weight: 600;
+    color: var(--secondary-color);
+    margin: 0;
+    padding: 0;
+
+    margin-top: 30px;
+  }
+
+  p{
+    color: var(--tertiary-color);
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 17px;
+    margin-block: 20px;
+  }
+
+  .Centralização {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+    @media (max-width: 800px){
+      justify-content: left;
+      padding-inline: 20px;
+    }
+  }
+
+  .Layout {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    width: 1900px;
+
+    @media (max-width: 2000px){
+      width: 90%;
+    }
+
+    @media (max-width: 800px){
+      width: 100%;
+    }
+  }
+`;
+
+export const SkillsSection = styled.section`
+
+`;
+
+// export const TecnoSection = styled.section`
+
+// `;
+
+// export const ProjectsSection = styled.section`
+
+// `;
+
+export const Space = styled.div`
+  height: 550px;
 `;

@@ -12,7 +12,7 @@ export const Lista = styled.ul`
   display: flex;
   flex-direction: row;
   gap: 60px;
-  font-family: "Jost", sans-serif;
+  font-family: var(--font-family);
   font-optical-sizing: auto;
   font-weight: bold;
   
@@ -23,7 +23,7 @@ export const Lista = styled.ul`
     transition: 200ms;
 
     &:hover {
-      color: #FF7A00;
+      color: var(--secondary-color);
       text-decoration: underline;
     }
   }
