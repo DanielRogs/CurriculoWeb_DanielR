@@ -19,12 +19,14 @@ const buttonVariants = {
   `,
 };
 
-export const Container = styled.div`
+export const Container = styled.button`
   display: flex;
   margin-block: 15px;
   padding-block: 10px;
   padding-inline: 30px;
   border-radius: 8px;
+  outline: none;
+  border: none;
   font-family: var(--font-family);
   font-weight: bold;
   cursor: pointer;
