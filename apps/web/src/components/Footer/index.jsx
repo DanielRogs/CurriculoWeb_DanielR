@@ -22,7 +22,7 @@ const Footer = () => {
             </Nav>
           </section>
           <section className="section-forms">
-            <h1>Interessado em realizar um projeto?</h1>
+            <h1>Pretendendo realizar um projeto?</h1>
 
             <Form>
               <TextInput placeholder={"Qual o seu nome?"} />

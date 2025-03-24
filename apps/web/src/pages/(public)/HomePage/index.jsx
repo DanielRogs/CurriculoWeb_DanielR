@@ -19,6 +19,7 @@ import {
   FaHtml5,
   FaCss3Alt,
   FaDocker,
+  FaArrowRight,
 } from "react-icons/fa";
 import { FaListCheck } from "react-icons/fa6";
 import {
@@ -33,13 +34,23 @@ import {
 } from "react-icons/si";
 import CardSkills from "../../../components/CardSkills";
 import CardTecno from "../../../components/CardTecno";
+import CardProject from "../../../components/CardProject";
+import ButtonIcon from "../../../components/ButtonIcon";
+
+import Daniel from "../../../assets/Daniel.png";
+import PresenceCapa from "../../../assets/(projects)/PresenceCapa.png";
+import AuEncontroCapa from "../../../assets/(projects)/AuEncontroCapa.png";
+import CAPJUCapa from "../../../assets/(projects)/CAPJUCapa.png";
+import FamiliaSitioCapa from "../../../assets/(projects)/FamiliaSitioCapa.png";
+import AlvorecerFeudalCapa from "../../../assets/(projects)/AlvorecerFeudalCapa.png";
 
 const HomePage = () => {
   return (
     <Container>
       <ApresentationSection>
         <section className="section-name">
-          <span className="first-name">Daniel</span>{" "}
+          <span className="first-name">Daniel</span>
+          <img src={Daniel} alt="Daniel Rodrigues" />
           <span className="last-name">Rodrigues.</span>
           <div className="line" />
           <section className="section-social">
@@ -179,16 +190,53 @@ const HomePage = () => {
       <ProjectsSection>
         <section className="section-description">
           <span>Projetos</span>
-          <h1>Trabalhos Realizados.</h1>
+          <h1>Trabalhos Recentes.</h1>
           <p>
             Acompanhe projetos de outros produtos de software em andamento em
             meu GitHub.
           </p>
 
-          <Button variant="orange">Visitar GitHub</Button>
+          <ButtonIcon icon={<FaArrowRight className="icon" />}>
+            Visitar GitHub
+          </ButtonIcon>
         </section>
-
-        <section className="section-projects"></section>
+        <section className="section-projects">
+          <CardProject
+            image={PresenceCapa}
+            title={"Presence - Aplicativo de Chamadas Digitais"}
+            description={
+              "Uma forma moderna e ágil de registrar presenças em sala de aula. Professores criam turmas, geram códigos para chamadas e monitoram a frequência dos alunos em tempo real, eliminando o papel e tornando o processo mais prático."
+            }
+          />
+          <CardProject
+            image={CAPJUCapa}
+            title={"CAPJU - Gerenciador de Processos Juríricos"}
+            description={
+              "Desenvolvido para o Tribunal de Justiça do Distrito Federal, o CAPJU é um sistema de gerenciamento de processos jurídicos que facilita a comunicação entre os divesos setores do tribunal através do controle de status e notificações em tempo real."
+            }
+          />
+          <CardProject
+            image={AuEncontroCapa}
+            title={"Au! Encontro - Aplicativo de Auxílio aos Animais"}
+            description={
+              "O Au! Encontro é o aplicativo que auxilia usuários em processos de adoção e em situações de perda do animal. Com um sistema de geolocalização, o app encontra animais que foram perdidos e os devolve aos seus donos em uma estratégia semelhante ao jogo 'Pokémon Go'."
+            }
+          />
+          <CardProject
+            image={FamiliaSitioCapa}
+            title={"Família do Sítio - Site Institucional"}
+            description={
+              "Desenvolvido para a empresa Família do Sítio, o seu site institucional foi uma plataforma de vendas de produtos orgânicos e naturais. Com um design clean e intuitivo, o site é responsivo e se adapta a qualquer dispositivo."
+            }
+          />
+          <CardProject
+            image={AlvorecerFeudalCapa}
+            title={"Alvorecer Feudal - Aplicativo Educativo Gamificado"}
+            description={
+              "Desenvolvido em parceira com a Universidade de Brasília (UnB), o Alvorecer Feudal é um aplicativo educativo gamificado que aproxima alunos e professores através da análise de dados de perfomance de alunos em atividades de ensino. (Software Low-Code)"
+            }
+          />
+        </section>
       </ProjectsSection>
     </Container>
   );

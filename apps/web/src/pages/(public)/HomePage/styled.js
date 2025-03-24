@@ -19,6 +19,15 @@ export const ApresentationSection = styled.section`
     display: flex;
     flex-direction: column;
 
+    img{
+      position: absolute;
+      width: 900px;
+      top: 0;
+      margin-top: 50px;
+      margin-left: -45px;
+      z-index: 2;
+    }
+
     .first-name {
       margin: 0;
       padding: 0;
@@ -33,6 +42,7 @@ export const ApresentationSection = styled.section`
     .last-name {
       margin: 0;
       padding: 0;
+      z-index: 2;
 
       color: var(--tertiary-color);
       font-family: var(--font-family);
@@ -81,6 +91,7 @@ export const ApresentationSection = styled.section`
     flex-direction: row;
     gap: 10px;
     margin-top: 30px;
+    z-index: 2;
 
     .icon {
       color: var(--secondary-color);
@@ -98,12 +109,13 @@ export const ApresentationSection = styled.section`
     display: flex;
     flex-direction: row;
     gap: 10px;
+    z-index: 2;
   }
 `;
 
 export const AboutMeSection = styled.section`
   position: absolute;
-  z-index: 1;
+  z-index: 3;
   width: 100%;
   margin-top: 550px;
   display: flex;
@@ -162,7 +174,7 @@ export const SkillsSection = styled.section`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  z-index: 2;
+  z-index: 4;
   width: 100%;
 `;
 
@@ -229,6 +241,8 @@ export const ProjectsSection = styled.section`
     display: flex;
     flex-direction: column;
     width: 100%;
+    align-items: start;
+
 
     span{
       color: var(--secondary-color);
@@ -256,6 +270,14 @@ export const ProjectsSection = styled.section`
       padding: 0;
       margin: 0;
     }
+  }
+
+  .section-projects{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
   }
 `;
 

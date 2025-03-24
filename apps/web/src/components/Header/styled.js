@@ -10,7 +10,7 @@ export const Container = styled.nav`
   justify-content: center;
   align-items: center;
   padding-top: 10px;
-  z-index: 3;
+  z-index: 100;
   background: var(--primary-color);
 `;
 
