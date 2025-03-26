@@ -119,8 +119,13 @@ export const AboutMeSection = styled.section`
   width: 100%;
   margin-top: 550px;
   display: flex;
+  flex-direction: column;
   background: var(--primaryDark-color);
   padding-bottom: 120px;
+
+  @media (max-width: 867px) {
+    padding-bottom: 30px;
+  }
 
   h1 {
     color: white;
@@ -176,6 +181,31 @@ export const SkillsSection = styled.section`
   justify-content: space-between;
   z-index: 4;
   width: 100%;
+  margin-top: -80px;
+
+  @media (max-width: 1647px) {
+    margin-top: -50px;
+  }
+
+  @media (max-width: 1594px) {
+    margin-top: -30px;
+  }
+
+  @media (max-width: 1274px) {
+    margin-top: 20px;
+  }
+
+  @media (max-width: 1052px) {
+    margin-top: 60px;
+  }
+
+  @media (max-width: 914px) {
+    margin-top: 100px;
+  }
+
+  @media (max-width: 867px) {
+    display: none;
+  }
 `;
 
 export const TecnoSection = styled.section`
@@ -237,14 +267,13 @@ export const ProjectsSection = styled.section`
   width: 100%;
   margin-block: 50px;
 
-  .section-description{
+  .section-description {
     display: flex;
     flex-direction: column;
     width: 100%;
     align-items: start;
 
-
-    span{
+    span {
       color: var(--secondary-color);
       font-family: var(--font-family);
       font-weight: 600;
@@ -253,7 +282,7 @@ export const ProjectsSection = styled.section`
       margin: 0;
     }
 
-    h1{
+    h1 {
       color: var(--tertiary-color);
       font-family: var(--font-family);
       font-weight: 400;
@@ -262,7 +291,7 @@ export const ProjectsSection = styled.section`
       margin: 0;
     }
 
-    p{
+    p {
       color: var(--tertiary-color);
       font-family: var(--font-family);
       font-weight: 400;
@@ -272,17 +301,42 @@ export const ProjectsSection = styled.section`
     }
   }
 
-  .section-projects{
+  .section-projects {
     margin-top: 30px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     flex-wrap: wrap;
     gap: 40px;
+
+    @media (max-width: 889px) {
+      justify-content: center;
+    }
   }
 `;
 
 export const Space = styled.div`
   height: 550px;
+
+  @media (max-width: 711px) {
+    height: 600px;
+  }
+
+  @media (max-width: 624px) {
+    height: 650px;
+  }
+
+  @media (max-width: 572px) {
+    height: 700px;
+  }
+
+  @media (max-width: 505px) {
+    height: 800px;
+  }
+
+  @media (max-width: 440px) {
+    height: px;
+  }
 `;
 
 export const Space2 = styled.div`
