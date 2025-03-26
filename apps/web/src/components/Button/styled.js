@@ -22,8 +22,8 @@ const buttonVariants = {
 export const Container = styled.button`
   display: flex;
   margin-block: 15px;
-  padding-block: 10px;
-  padding-inline: 30px;
+  padding-block: 8px;
+  padding-inline: 20px;
   border-radius: 8px;
   outline: none;
   border: none;
@@ -31,6 +31,8 @@ export const Container = styled.button`
   font-weight: bold;
   cursor: pointer;
   transition: 200ms;
+  text-decoration: none;
+  font-size: 14px;
 
   ${({ variant }) => buttonVariants[variant] || buttonVariants.default}
 `;

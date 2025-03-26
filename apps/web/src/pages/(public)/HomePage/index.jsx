@@ -9,6 +9,7 @@ import {
   TecnoSection,
 } from "./styled";
 import Button from "../../../components/Button";
+import Curriculo from "../../../assets/CV_DanielR.pdf";
 
 import {
   FaInstagram,
@@ -69,7 +70,14 @@ const HomePage = () => {
             Mobile.
           </p>
           <section className="section-buttons">
-            <Button variant="orange">Baixar Currículo</Button>
+            <Button
+              variant="orange"
+              as={"a"}
+              href={Curriculo}
+              download={"CurriculoDan"}
+            >
+              Baixar Currículo
+            </Button>
             <Button>Entrar em Contato</Button>
           </section>
         </section>
