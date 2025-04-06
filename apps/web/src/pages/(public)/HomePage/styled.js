@@ -56,6 +56,35 @@ export const ApresentationSection = styled.section`
       width: 100px;
       border-radius: 100px;
     }
+
+    @media (max-width: 1187px) {
+      .first-name {
+        font-size: 80px;
+      }
+
+      .last-name {
+        font-size: 60px;
+      }
+      img {
+        width: 700px;
+        margin-left: -20px;
+      }
+    }
+
+    @media (max-width: 1132px) {
+      .first-name {
+        font-size: 70px;
+      }
+
+      .last-name {
+        font-size: 50px;
+      }
+      img {
+        width: 600px;
+        margin-left: -20px;
+        margin-top: 150px;
+      }
+    }
   }
 
   .section-description {
@@ -84,6 +113,16 @@ export const ApresentationSection = styled.section`
         color: var(--secondary-color);
       }
     }
+
+    @media (max-width: 1132px) {
+      h1 {
+        font-size: 30px;
+      }
+
+      p {
+        font-size: 15px;
+      }
+    }
   }
 
   .section-social {
@@ -110,6 +149,36 @@ export const ApresentationSection = styled.section`
     flex-direction: row;
     gap: 10px;
     z-index: 2;
+  }
+
+  @media (max-width: 987px) {
+    height: 600px;
+    margin-top: 0px;
+    justify-content: center;
+    align-items: center;
+
+    .section-name {
+      display: none;
+    }
+
+    .section-description {
+      display: flex;
+      align-items: center;
+      text-align: center;
+
+      h1 {
+        font-size: 30px;
+        margin-block: 10px;
+      }
+
+      p {
+        font-size: 15px;
+      }
+    }
+
+    .section-social {
+      margin-top: 20px;
+    }
   }
 `;
 
@@ -240,6 +309,18 @@ export const TecnoSection = styled.section`
       margin: 0;
     }
 
+    @media (max-width: 441px) {
+      h1 {
+        font-size: 40px;
+      }
+    }
+
+    @media (max-width: 325px) {
+      h1 {
+        font-size: 30px;
+      }
+    }
+
     p {
       color: var(--tertiary-color);
       font-family: var(--font-family);
@@ -247,6 +328,12 @@ export const TecnoSection = styled.section`
       font-size: 17px;
       padding: 0;
       margin: 0;
+    }
+
+    @media (max-width: 325px) {
+      p {
+        font-size: 13px;
+      }
     }
   }
 
@@ -258,7 +345,6 @@ export const TecnoSection = styled.section`
     align-items: center;
     justify-content: center;
   }
-
 `;
 
 export const ProjectsSection = styled.section`
@@ -335,7 +421,23 @@ export const Space = styled.div`
   }
 
   @media (max-width: 440px) {
-    height: px;
+    height: 840px;
+  }
+
+  @media (max-width: 425px) {
+    height: 900px;
+  }
+
+  @media (max-width: 396px) {
+    height: 980px;
+  }
+
+  @media (max-width: 362px) {
+    height: 1050px;
+  }
+
+  @media (max-width: 340px) {
+    height: 1180px;
   }
 `;
 
