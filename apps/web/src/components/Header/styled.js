@@ -41,6 +41,7 @@ export const Container = styled.nav`
       font-size: 25px;
       margin-right: 20px;
       color: white;
+      z-index: 1001;
     }
   }
 
@@ -52,10 +53,41 @@ export const Container = styled.nav`
       display: flex;
     }
 
-    .language-selection{
+    .language-selection {
       margin-right: 0px;
       margin-left: 20px;
+      z-index: 1001;
+    }
+  }
 
+  .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 1000;
+    font-family: var(--font-family);
+    font-weight: bold;
+    font-size: 30px;
+
+    span {
+      color: white;
+      cursor: pointer;
+      transition: 200ms;
+
+      &:hover {
+        color: var(--secondary-color);
+        text-decoration: underline;
+      }
     }
   }
 `;

@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Lista } from "./styled";
 import { IoMenu } from "react-icons/io5";
 
 const Header = ({ language = "ptbr" }) => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
   const handleLanguageChange = (lang) => {
     language = lang;
+  };
+
+  const handleMobileMenuToggle = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
   return (
@@ -40,7 +46,18 @@ const Header = ({ language = "ptbr" }) => {
       </div>
 
       <div className="mobile-menu">
-        <IoMenu className="icon" />
+        <IoMenu className="icon" onClick={() => handleMobileMenuToggle()} />
+      </div>
+
+      <div
+        className="menu"
+        style={{ display: isMobileMenuOpen ? "flex" : "none" }}
+      >
+        <span>Início</span>
+        <span>Sobre Mim</span>
+        <span>Tecnologias</span>
+        <span>Projetos</span>
+        <span>Contato</span>
       </div>
     </Container>
   );
