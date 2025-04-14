@@ -1,0 +1,23 @@
+{
+  "navBar": {
+    "home": "Início",
+    "about": "Sobre Mim",
+    "tecnology": "Tecnologias",
+    "projects": "Projetos",
+    "contact": "Contato"
+  },
+  "homePage": {
+    "apresentation": {
+      "hello": "Olá, Bem Vindo!",
+      "job": "Engenheiro de",
+      "job2": "Software pela",
+      "university": "UnB",
+      "objective": "Soluções em Engenharia de Software e design para aplicações Web e Mobile."
+    },
+    "buttons": {
+      "downloadResume": "Baixar Currículo",
+      "contactMe": "Entrar em contato",
+      "send": "Enviar"
+    }
+  }
+}

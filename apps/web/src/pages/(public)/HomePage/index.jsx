@@ -10,6 +10,7 @@ import {
 } from "./styled";
 import Button from "../../../components/Button";
 import Curriculo from "../../../assets/CV_DanielR.pdf";
+import { useTranslation } from "react-i18next";
 
 import {
   FaInstagram,
@@ -46,6 +47,8 @@ import FamiliaSitioCapa from "../../../assets/(projects)/FamiliaSitioCapa.png";
 import AlvorecerFeudalCapa from "../../../assets/(projects)/AlvorecerFeudalCapa.png";
 
 const HomePage = () => {
+  const { t } = useTranslation();
+
   return (
     <Container>
       <ApresentationSection>
@@ -61,14 +64,13 @@ const HomePage = () => {
           </section>
         </section>
         <section className="section-description">
-          <p>Olá, Bem Vindo!</p>
+          <p>{t("homePage.apresentation.hello")}</p>
           <h1>
-            Engenheiro de <br /> Software pela <span>UnB</span>.
+            {t("homePage.apresentation.job")} <br />{" "}
+            {t("homePage.apresentation.job2")}{" "}
+            <span>{t("homePage.apresentation.university")}</span>.
           </h1>
-          <p>
-            Soluções em Engenharia de Software e design para aplicações Web e
-            Mobile.
-          </p>
+          <p>{t("homePage.apresentation.objective")}</p>
           <section className="section-buttons">
             <Button
               variant="orange"
@@ -76,10 +78,15 @@ const HomePage = () => {
               href={Curriculo}
               download={"CurriculoDan"}
             >
-              Baixar Currículo
+              {t("homePage.buttons.downloadResume")}
             </Button>
-            <Button>Entrar em Contato</Button>
+            <Button>{t("homePage.buttons.contactMe")}</Button>
           </section>
+        </section>
+        <section className="section-social-mobile">
+          <FaLinkedin className="icon linkedin" />
+          <FaGithubSquare className="icon github" />
+          <FaInstagram className="icon insta" />
         </section>
       </ApresentationSection>
       <AboutMeSection>

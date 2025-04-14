@@ -19,7 +19,7 @@ export const ApresentationSection = styled.section`
     display: flex;
     flex-direction: column;
 
-    img{
+    img {
       position: absolute;
       width: 900px;
       top: 0;
@@ -151,11 +151,35 @@ export const ApresentationSection = styled.section`
     z-index: 2;
   }
 
+  .section-social-mobile {
+    display: none;
+
+    @media (max-width: 987px) {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      margin-top: 30px;
+      z-index: 2;
+
+      .icon {
+        color: var(--secondary-color);
+        font-size: 25px;
+        cursor: pointer;
+        transition: 200ms;
+
+        &:hover {
+          color: var(--tertiary-color);
+        }
+      }
+    }
+  }
+
   @media (max-width: 987px) {
     height: 600px;
     margin-top: 0px;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 
     .section-name {
       display: none;

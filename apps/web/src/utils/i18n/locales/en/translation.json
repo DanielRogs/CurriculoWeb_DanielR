@@ -1,0 +1,23 @@
+{
+  "navBar": {
+    "home": "Home",
+    "about": "About Me",
+    "tecnology": "Technologies",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "homePage": {
+    "apresentation": {
+      "hello": "Hello, Welcome!",
+      "job": "Software Engineer",
+      "job2": "from",
+      "university": "UnB",
+      "objective": "Software Engineering and design solutions for Web and Mobile Applications."
+    },
+    "buttons": {
+      "downloadResume": "Download Resume",
+      "contactMe": "Contact Me",
+      "send": "Submit"
+    }
+  }
+}

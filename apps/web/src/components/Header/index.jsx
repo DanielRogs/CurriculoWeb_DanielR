@@ -1,22 +1,34 @@
 import React, { useState } from "react";
 import { Container, Lista } from "./styled";
 import { IoMenu } from "react-icons/io5";
+import { useTranslation } from "react-i18next";
 
 const Header = ({ language = "ptbr" }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isMenuVisible, setIsMenuVisible] = useState(false);
+
+  const { i18n, t } = useTranslation();
 
   const handleLanguageChange = (lang) => {
-    language = lang;
+    i18n.changeLanguage(lang);
   };
 
   const handleMobileMenuToggle = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
+    if (!isMobileMenuOpen) {
+      setIsMobileMenuOpen(true);
+      setTimeout(() => {
+        setIsMenuVisible(true);
+      }, 300);
+    } else {
+      setIsMenuVisible(false);
+      setIsMobileMenuOpen(false);
+    }
   };
 
   return (
     <Container>
       <Lista>
-        <li>Início</li>
+        <li>{t("navBar.home")}</li>
         <li>Sobre Mim</li>
         <li>Tecnologias</li>
         <li>Projetos</li>
@@ -49,15 +61,17 @@ const Header = ({ language = "ptbr" }) => {
         <IoMenu className="icon" onClick={() => handleMobileMenuToggle()} />
       </div>
 
+      <div className={`menu-overlay ${isMobileMenuOpen ? "show" : ""}`} />
+
       <div
         className="menu"
-        style={{ display: isMobileMenuOpen ? "flex" : "none" }}
+        style={{ display: isMenuVisible ? "flex" : "none" }}
       >
-        <span>Início</span>
-        <span>Sobre Mim</span>
-        <span>Tecnologias</span>
-        <span>Projetos</span>
-        <span>Contato</span>
+        <span>{t("navBar.home")}</span>
+        <span>{t("navBar.about")}</span>
+        <span>{t("navBar.tecnology")}</span>
+        <span>{t("navBar.projects")}</span>
+        <span>{t("navBar.contact")}</span>
       </div>
     </Container>
   );

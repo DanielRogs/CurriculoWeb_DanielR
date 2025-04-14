@@ -60,6 +60,24 @@ export const Container = styled.nav`
     }
   }
 
+  .menu-overlay {
+    position: absolute;
+    top: 13px;
+    right: 5px; 
+    width: 50px;
+    height: 50px;
+    background-color: var(--primaryDark-color);
+    border-radius: 50%;
+    z-index: 999;
+    transform: scale(0);
+    transition: transform 0.6s ease-in-out;
+    pointer-events: none;
+  }
+
+  .menu-overlay.show {
+    transform: scale(50);
+  }
+
   .menu {
     display: flex;
     flex-direction: column;
@@ -69,7 +87,6 @@ export const Container = styled.nav`
     position: absolute;
     top: 0;
     right: 0;
-    background-color: var(--primary-color);
     width: 100%;
     height: 100vh;
     padding: 20px;
