@@ -1,16 +1,21 @@
 ## Currículo Web - Daniel
 
-<div style="display: flex; flex-direction: row; gap: 20px;">
-  <div style="display: flex; flex-direction: column; gap: 20px;">
-    <img style="border-radius: 50%;" src="https://github.com/DanielRogs.png" width="100px;"/>
-    <sub><b>Daniel Rodrigues</b></sub>
-  </div>
-  <div style="display: flex; flex-direction: column; gap: 20px;">
-    <img style="border-radius: 50%;" src="https://github.com/DanielRogs.png" width="100px;"/>
-    <sub><b>Daniel Rodrigues</b></sub>
-  </div>
-  <div style="display: flex; flex-direction: column; gap: 20px;">
-    <img style="border-radius: 50%;" src="https://github.com/DanielRogs.png" width="100px;"/>
-    <sub><b>Daniel Rodrigues</b></sub>
-  </div>
+<div align="center">
+  <img src="https://github.com/DanielRogs.png" width="150" height="150" style="border-radius: 50%; object-fit: cover;" alt="Daniel Rodrigues"/>
+  <br/>
+  <sub><b>🚀 Desenvolvedor Full Stack</b></sub>
+  <br/>
+  <sub>Criando experiências digitais incríveis</sub>
+</div>
+
+---
+
+### 👨‍💻 Sobre o Projeto
+
+Este é meu currículo web interativo, desenvolvido com as mais modernas tecnologias web para apresentar minha experiência e projetos de forma dinâmica e responsiva.
+
+### 🛠️ Tecnologias Utilizadas
+
+<div align="center">
+  <img src="https://skillicons.dev/icons?i=react,vite,js,html,css,nodejs" alt="Tech Stack"/>
 </div>
